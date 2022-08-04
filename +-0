@@ -1,0 +1,34 @@
+package positivo_negativo_neutro;
+
+import java.util.Scanner;
+
+public class Positivo_negativo_neutro {
+
+    public static void main(String[] args) {
+        // Resultado de la consulta si un número es positivo, negativo o neutro
+
+        //Variables
+        int n;
+        String r = "";
+
+        // Entrada
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Número: ");
+        n = teclado.nextInt();
+
+        //Proceso
+        if (n > 0) {
+            r = "EL NÚMERO ES POSITIVO";
+        }
+        if (n < 0) {
+            r = "EL NÚMERO ES NEGATIVO";
+        }
+        if (n == 0) {
+            r = "EL NÚMERO ES NEUTRO";
+        }
+        // Salida
+        System.out.println("");
+        System.out.println("Resultado: " + r);
+    }
+
+}
